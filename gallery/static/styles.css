@@ -1,5 +1,6 @@
 body {
   line-height: 1.5;
+  background-color: #f8f9fb;
 }
 html {
   box-sizing: border-box;
@@ -13,5 +14,5 @@ html {
   overflow-wrap: break-word;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
-  sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
