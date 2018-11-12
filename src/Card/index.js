@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { height, width, space, display } from 'styled-system'
+import { height, width, space, display, bgColor } from 'styled-system'
 
 const elevations = [
   '0px 1px 1px rgba(10, 31, 68, 0.08), 0px 0px 1px rgba(10, 31, 68, 0.08)',
@@ -22,6 +22,7 @@ const Card = styled.div`
   ${height}
   ${width}
   ${space}
+  ${bgColor}
   box-shadow: ${({ elevation }) => elevations[elevation]};
   transition: all 0.15s ease;
   ${({ onClick }) => onClick && onHover};
@@ -32,12 +33,14 @@ Card.propTypes = {
   ...height.propTypes,
   ...width.propTypes,
   ...space.propTypes,
+  ...bgColor.propTypes,
   elevation: PropTypes.number,
   onClick: PropTypes.func,
 }
 
 Card.defaultProps = {
   elevation: 0,
+  bg: '#fff',
 }
 
 export default Card
